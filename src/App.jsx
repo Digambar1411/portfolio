@@ -1,10 +1,15 @@
 import './App.css'
+import Footer from './Footer/Footer'
+import Header from './Header/Header'
+import Intro from './Intro/Intro'
 
 function App() {
 
   return (
     <>
-     <h1 className='flex bg-red-600'>Portfolio</h1>
+      <Header />
+      <Intro />
+      <Footer />
     </>
   )
 }
