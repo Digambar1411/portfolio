@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <div className='p-4 flex justify-between items-center'>
-      <h1 className='text-lg'>Digambar</h1>
+      <h1 className='text-lg font-extralight'>Digambar</h1>
       <div>
         <SocialLinks ids={links}/>
       </div>

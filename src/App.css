@@ -3,6 +3,8 @@
 #root {
   max-width: 760px;
   margin: 0 auto;
+  box-sizing: border-box;
+  font-optical-sizing: auto;
 }
 
 a{
