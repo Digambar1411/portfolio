@@ -11,7 +11,7 @@ function Intro() {
         <h1 className="font-bold text-2xl mb-2">Hello I'm Digambar.</h1>
         <p className='flex justify-start wrap text-gray-600'>A frontend developer specializing in React. I'm passionate about creating great web experiences that make a difference.</p>
         <div className='flex justify-items-center items-center gap-6 mt-6'>
-          <a href ="/digambar_resume.pdf" className='bg-black text-white py-2 px-4 border rounded-xl cursor-pointer'>Download resume</a>
+          <a href ="/digambar_resume.pdf" className='bg-black hover:bg-zinc-800 text-white py-2 px-4 border rounded-xl cursor-pointer'>Download resume</a>
           <SocialLinks ids={links} />
         </div>
       </div>
