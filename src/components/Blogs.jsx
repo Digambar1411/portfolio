@@ -13,7 +13,7 @@ function Blogs() {
       <div className='flex flex-col gap-6'>
         {
           blogs?.map(blog => (
-            <article key={blog.id} className='p-4 hover:border rounded-xl shadow-md border border-gray-200 gap-4 items-start hover:box-border h-30'>
+            <article key={blog.id} className='p-4 border-transparent hover:border hover:border-black hover:transition rounded-xl shadow-md border gap-4 items-start hover:box-border h-30'>
               <Link to={`/blog/${blog.slug}`} className='flex justify-between'>
                 <div className='w-[80%]'>
                   <h1 className='font-gray-700 text-xl'>{blog.title}</h1>
