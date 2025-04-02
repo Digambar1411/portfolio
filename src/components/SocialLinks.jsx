@@ -8,7 +8,7 @@ function SocialLinks(props) {
   return (
     <div className='flex gap-4'>
       {
-        filteredLinks.map((link) => (
+        filteredLinks?.map((link) => (
           <span key={link.id}>
             <a href={`${link.href}`}>
               <img src={`${link.icon}`} alt={`${link.alt}`} className='w-[28px] h-[28p]'/>
@@ -17,7 +17,6 @@ function SocialLinks(props) {
         ))
       }
     </div>
-
   )
 }
 

@@ -1,9 +1,44 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import { blogs } from '../Constants/constants'
 import Blog from './Blog'
+import { getBlogs } from '../utils/getBlogs';
 
 
 function Blogs() {
+
+  const GET_BLOGS = `query Publication {
+    publication(host: "digambar.hashnode.dev") {
+        isTeam
+        title
+        posts(first: 5) {
+            edges {
+                node {
+                    title
+                    brief
+                    url
+                    slug
+                    publishedAt
+                }
+            }
+        }
+    }
+  }`
+  
+  const [blogs, setBlogs] = useState(null);
+
+  useEffect( () => {
+    const fetchData = async () => {
+      try{
+        const data = await getBlogs(GET_BLOGS,{first: 5});
+        console.log('data', data);
+        setBlogs(data.data.publication.posts.edges);
+      }catch(err){
+        console.log('Error',  err);
+      }
+    }
+    fetchData();
+  }, [])
+  
 
   return (
     <div className='px-4 my-20'>
