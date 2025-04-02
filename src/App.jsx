@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
-import { Header, Intro, Blogs, Projects, Footer, BlogDetails} from './components'
+import { Header, Intro, Blogs, Projects, Footer} from './components'
 
 function App() {
 
@@ -16,7 +16,6 @@ function App() {
           </>
         } />
         <Route path='/blogs' element={<Blogs />} />
-        <Route path='/blog/:filename' element={<BlogDetails />} />
       </Routes>
       <Footer />
     </Router>

@@ -3,14 +3,14 @@ const blogs = [
     id: 1, 
     title: `Comprehensive Beginner's Guide to CSS Flexbox`, 
     content: 'This complete guide explains about flexbox, focusing on different properties for the parent element and the child elements', 
-    filename: 'guide-to-css-flexbox', 
-    publishDate: 'May 2, 2024' 
+    filename: 'a-complete-beginner-guide-to-css-flexbox', 
+    publishDate: 'May 2, 2024' ,
   },
   {
     id: 2,
     title: 'Selectores in CSS',
     content: 'A complete guide covering various methods to select elements in CSS and how to use them for applying styles',
-    filename: 'css-selectors', 
+    filename: 'selectores-in-css', 
     publishDate: 'Nov 12, 2023'
   },
   {
