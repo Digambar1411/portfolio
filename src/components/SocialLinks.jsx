@@ -11,7 +11,7 @@ function SocialLinks(props) {
         filteredLinks.map((link) => (
           <span key={link.id}>
             <a href={`${link.href}`}>
-              <img src={`${link.icon}`} alt={`${link.alt}`} className='w-4 h-4'/>
+              <img src={`${link.icon}`} alt={`${link.alt}`} className='w-[28px] h-[28p]'/>
             </a>
           </span>
         ))
