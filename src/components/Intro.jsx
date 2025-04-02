@@ -9,9 +9,9 @@ function Intro() {
     <div className='flex justify-between gap-4 mt-12 p-4'>
       <div className='max-w-[70%]'>
         <h1 className="font-bold text-2xl mb-2">Hello I'm Digambar.</h1>
-        <p className='flex justify-start wrap'>A frontend developer specializing in React. I'm passionate about creating great web experiences that make a difference.</p>
+        <p className='flex justify-start wrap text-gray-600'>A frontend developer specializing in React. I'm passionate about creating great web experiences that make a difference.</p>
         <div className='flex justify-items-center items-center gap-6 mt-6'>
-          <button className='bg-black text-white py-2 px-4 border rounded-xl cursor-pointer'>Download resume</button>
+          <a href ="/digambar_resume.pdf" className='bg-black text-white py-2 px-4 border rounded-xl cursor-pointer'>Download resume</a>
           <SocialLinks ids={links} />
         </div>
       </div>
