@@ -1,9 +1,9 @@
 import React from 'react'
-import SocialLinks from '../SocialLinks/SocialLinks'
+import SocialLinks from './SocialLinks'
 
 function Intro() {
 
-  const links = ['github','linkedin','x'];
+  const links = ['github', 'linkedin', 'x'];
 
   return (
     <div className='flex justify-between gap-4 mt-12 p-4'>
