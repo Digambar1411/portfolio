@@ -41,7 +41,7 @@ function Blogs() {
   
 
   return (
-    <div className='px-4 my-20'>
+    <div className='px-4 my-20  dark:bg-gray-800 dark:text-gray-100'>
       <div className='flex justify-between items-center mb-4'>
         <h1 className='font-bold text-2xl'>Blogs</h1>
       </div>
