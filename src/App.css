@@ -1,11 +1,15 @@
 @import "tailwindcss";
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
+[data-theme='dark']{
+  --bg-color: #030712;
+}
+
 #root {
   margin: 0 auto;
   box-sizing: border-box;
   font-optical-sizing: auto;
-  /* background-color: #030712; */
+  background-color: var(--bg-color);
 }
 
 a{
