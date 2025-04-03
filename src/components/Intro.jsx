@@ -1,5 +1,6 @@
 import React from 'react'
 import SocialLinks from './SocialLinks'
+import profilePic from '../assets/profile.jpg'
 
 function Intro() {
 
@@ -15,8 +16,7 @@ function Intro() {
           <SocialLinks ids={links} className='max-sm:hidden!'/>
         </div>
       </div>
-      <img src='/src/assets/profile.jpg' alt="profile-picture" className='w-40 max-sm:w-30 rounded-2xl' />
-
+      <img src={profilePic} alt="profile-picture" className='w-40 max-sm:w-30 rounded-2xl' />
     </div>
   )
 }
