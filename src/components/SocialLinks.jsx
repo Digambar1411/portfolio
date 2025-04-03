@@ -6,7 +6,7 @@ function SocialLinks(props) {
   const filteredLinks = socialLinksArray.filter((link) => props.ids.includes(link.id))
 
   return (
-    <div className='flex gap-4 items-center'>
+    <div className={`flex gap-4 items-center ${props.className}`}>
       {
         filteredLinks?.map((link) => (
           <span key={link.id}>
