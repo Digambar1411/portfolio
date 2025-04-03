@@ -55,7 +55,7 @@ const projects = [
   {
     id: 'neotube',
     title: 'Neotube- Video Streaming Platform',
-    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    content: 'Video consumption platform inspired by youtube, ddeveloped using React, Redux, React Router, and Vanila CSS',
     link: 'https://neo-tube.netlify.app/',
     startDate: 'Oct 2023',
     endDate: 'Dec 2023'
