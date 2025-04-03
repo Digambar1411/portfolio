@@ -1,47 +1,43 @@
-import React, {useEffect, useState} from 'react'
+import React  from 'react'
 import { blogs } from '../Constants/constants'
 import Blog from './Blog'
-import { getBlogs } from '../utils/getBlogs';
 
 
 function Blogs() {
 
-  const GET_BLOGS = `query Publication {
-    publication(host: "digambar.hashnode.dev") {
-        isTeam
-        title
-        posts(first: 5) {
-            edges {
-                node {
-                    title
-                    brief
-                    url
-                    slug
-                    publishedAt
-                }
-            }
-        }
-    }
-  }`
+  // const GET_BLOGS = `query Publication {
+  //   publication(host: "digambar.hashnode.dev") {
+  //       isTeam
+  //       title
+  //       posts(first: 5) {
+  //           edges {
+  //               node {
+  //                   title
+  //                   brief
+  //                   url
+  //                   slug
+  //                   publishedAt
+  //               }
+  //           }
+  //       }
+  //   }
+  // }`
+  // const [blogs, setBlogs] = useState(null);
+  // useEffect( () => {
+  //   const fetchData = async () => {
+  //     try{
+  //       const data = await getBlogs(GET_BLOGS,{first: 5});
+  //       console.log('data', data);
+  //       setBlogs(data.data.publication.posts.edges);
+  //     }catch(err){
+  //       console.log('Error',  err);
+  //     }
+  //   }
+  //   fetchData();
+  // }, [])
   
-  const [blogs, setBlogs] = useState(null);
-
-  useEffect( () => {
-    const fetchData = async () => {
-      try{
-        const data = await getBlogs(GET_BLOGS,{first: 5});
-        console.log('data', data);
-        setBlogs(data.data.publication.posts.edges);
-      }catch(err){
-        console.log('Error',  err);
-      }
-    }
-    fetchData();
-  }, [])
-  
-
   return (
-    <div className='px-4 my-20  dark:bg-gray-800 dark:text-gray-100'>
+    <div className='px-4 my-20  dark:bg-gray-950 dark:text-gray-100'>
       <div className='flex justify-between items-center mb-4'>
         <h1 className='font-bold text-2xl'>Blogs</h1>
       </div>

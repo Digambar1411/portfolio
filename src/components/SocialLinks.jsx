@@ -6,12 +6,12 @@ function SocialLinks(props) {
   const filteredLinks = socialLinksArray.filter((link) => props.ids.includes(link.id))
 
   return (
-    <div className='flex gap-4 dark:bg-gray-800 dark:text-gray-100'>
+    <div className='flex gap-4 items-center'>
       {
         filteredLinks?.map((link) => (
           <span key={link.id}>
-            <a href={`${link.href}`}>
-              <img src={`${link.icon}`} alt={`${link.alt}`} className='w-[28px] h-[28p]'/>
+            <a href={`${link.href}`} target="_blank" rel="noopener noreferrer" className='text-2xl hover:scale-110 transition-transform p-1 inline-block border-0 rounded hover:bg-gray-200 hover:dark:bg-gray-800'>
+              {link.icon}
             </a>
           </span>
         ))

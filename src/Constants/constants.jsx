@@ -1,3 +1,5 @@
+import { FaEnvelope, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa"
+
 const blogs = [
   {
     id: 1, 
@@ -26,25 +28,25 @@ const socialLinksArray = [
   {
     id: 'email',
     href: 'mailTo:deshawald14@gmail.com',
-    icon: 'https://img.icons8.com/material-outlined/48/new-post.png', 
+    icon: <FaEnvelope />, 
     alt: 'email'
   },
   {
     id: 'github',
     href: 'https://github.com/Digambar1411', 
-    icon: 'https://img.icons8.com/material-outlined/48/github.png', 
+    icon: <FaGithub />, 
     alt: 'github'
   },
   { 
     id: 'linkedin', 
     href: 'https://www.linkedin.com/in/digambar-deshawal-9b279b147/', 
-    icon: 'https://img.icons8.com/ios-filled/50/linkedin.png', 
+    icon: <FaLinkedinIn />, 
     alt: 'linkedin' 
   },
   { 
     id: 'x', 
     href: 'https://twitter.com/deshawald14', 
-    icon: 'https://img.icons8.com/ios/50/twitterx--v2.png', 
+    icon: <FaTwitter /> ,
     alt: 'x' 
   },
 ]
