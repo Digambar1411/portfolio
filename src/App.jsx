@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
-import './index.css'
 import { Header, Intro, Blogs, Projects, Footer} from './components'
 import { ThemeProvider } from './context/theme-context'
 
