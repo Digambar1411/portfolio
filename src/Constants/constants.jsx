@@ -35,19 +35,16 @@ const socialLinksArray = [
     id: 'github',
     href: 'https://github.com/Digambar1411', 
     icon: <FaGithub />, 
-    alt: 'github'
   },
   { 
     id: 'linkedin', 
     href: 'https://www.linkedin.com/in/digambar-deshawal-9b279b147/', 
     icon: <FaLinkedinIn />, 
-    alt: 'linkedin' 
   },
   { 
     id: 'x', 
     href: 'https://twitter.com/deshawald14', 
     icon: <FaTwitter /> ,
-    alt: 'x' 
   },
 ]
 
@@ -55,7 +52,7 @@ const projects = [
   {
     id: 'neotube',
     title: 'Neotube- Video Streaming Platform',
-    content: 'Video consumption platform inspired by youtube, ddeveloped using React, Redux, React Router, and Vanila CSS',
+    content: 'Video consumption platform inspired by youtube, developed using React, React Router and Vanila CSS',
     link: 'https://neo-tube.netlify.app/',
     startDate: 'Oct 2023',
     endDate: 'Dec 2023'
