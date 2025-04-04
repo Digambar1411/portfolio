@@ -7,12 +7,10 @@ const useTheme = ()=>useContext(themeContext);
 const ThemeProvider = ({children})=>{
   const initialValue= localStorage.getItem("theme");
 
-  const [theme, setTheme] = useState(initialValue);
+  const [theme, setTheme] = useState(initialValue || 'dark');
 
   const toggleTheme = () => {
-    console.log('Toggle Theme');
-    console.log('Current Theme', theme);
-    setTheme((theme)=>setTheme(theme === 'light' ? 'dark' : 'light'));
+    setTheme((theme)=>theme === 'light' ? 'dark' : 'light');
   }
 
   useEffect(()=>{
