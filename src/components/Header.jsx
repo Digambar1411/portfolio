@@ -12,8 +12,8 @@ function Header() {
       <nav>
         <a href="/blogs" className='dark:text-gray-100'>Blogs</a>
         <span className='ml-4 cursor-pointer' onClick={toggleTheme}>
-          <FaSun className={`w-5 h-5 ${theme === 'dark' ? 'hidden' : 'inline'}`} />
-          <FaMoon className={`w-5 h-5 ${theme === 'dark' ? 'inline' : 'hidden'}`} />
+          <FaSun className={`w-5 h-5 ${theme === 'dark' ? 'inline' : 'hidden'}`} />
+          <FaMoon className={`w-5 h-5 ${theme === 'dark' ? 'hidden' : 'inline'}`} />
         </span>
       </nav>
     </div>
