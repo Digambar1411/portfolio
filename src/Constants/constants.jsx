@@ -57,6 +57,22 @@ const projects = [
     startDate: 'Oct 2023',
     endDate: 'Dec 2023'
   },
+  {
+    id: 'diwali-wishes',
+    title: 'Diwali wishes- diwali-invitation',
+    content: 'Personalised Diwali wish to loved ones developed as fun with tech React and CSS3',
+    link: 'https://diwali-wishes-to-you.netlify.app/',
+    startDate: 'Oct 2024',
+    endDate: 'Oct 2024'
+  },
+  {
+    id: 'product-listings',
+    title: 'E-commerce Product Listings',
+    content: 'E-commerce product listing page with functionality sort and filter, developed with React and CSS3',
+    link: 'https://products-listing-page.netlify.app/',
+    startDate: 'Nov 2024',
+    endDate: 'Nov 2024'
+  },
 ]
 
 export { blogs, socialLinksArray, projects }
